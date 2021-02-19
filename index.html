@@ -9,27 +9,28 @@
 	<script>
 	//create an array of words
 	let words = [
-	'apple',
-	'peanuts',
-	'chocolate',
-	'cars',
-	'puppy',
-	'cheeseburger',
-	'television',
-	'couch',
-	'music'
+	// 'apple',
+	// 'peanuts',
+	// 'chocolate',
+	// 'cars',
+	// 'puppy',
+	// 'cheeseburger',
+	// 'television',
+	// 'couch',
+	'Music'
 	];
 	
 
 	
 	//pick a random word; pick the index using random and floor 
 	let word = words[Math.floor(Math.random() * words.length)];
+	word = word.toLowerCase();
 	
 	
 	//Set up the answer array
 	let answerArray = [];
 	for (let i = 0; i < word.length; i++) {
-		answerArray[i] = "_";
+		answerArray[i] = "_ ";
 	}
 	let remainingLetters = word.length
 	//Game loop
@@ -54,7 +55,7 @@
 		}
 	}
 		alert(answerArray.join(''))
-		alert('Good job! You did it! The answer was ' + word + ' !')
+		alert('Good job! You did it! The answer was ' + word + '!')
 		</script>
 	</body>
 	</html>
