@@ -11,6 +11,7 @@
 	let words = [
 	'Apple',
 	'Peanuts',
+<<<<<<< HEAD
 	'Chocolate',
 	'Cherries',
 	'Banana',
@@ -20,17 +21,29 @@
 	];
 
 	let lowerCase = words.map((words) => word.toLowerCase());
+=======
+	'Chocolate'
+	];
+>>>>>>> 9df9ef407b4e60ded6439b0b88e6fe61141b08d4
 	
 
 	
 	//pick a random word; pick the index using random and floor 
+<<<<<<< HEAD
 	let hangManWord = lowerCase.guess[Math.floor(Math.random() * lowerCase.length)];
+=======
+	let word = words[Math.floor(Math.random() * words.length)];
+>>>>>>> 9df9ef407b4e60ded6439b0b88e6fe61141b08d4
 	
 	
 	//Set up the answer array
 	let answerArray = [];
 	for (let i = 0; i < word.length; i++) {
+<<<<<<< HEAD
 		answerArray[i] = "_ ";
+=======
+		answerArray[i] = "_";
+>>>>>>> 9df9ef407b4e60ded6439b0b88e6fe61141b08d4
 	}
 	let remainingLetters = word.length
 	//Game loop
@@ -46,8 +59,13 @@
 			alert ('You must enter one character');
 		} else {
 			guess = guess.toLowerCase();
+<<<<<<< HEAD
 			for (let j = 0; j < hangManWord.length; j++) {
 				if (hangManWord[j] === guess) {
+=======
+			for (let j = 0; j < word.length; j++) {
+				if (word[j] === guess) {
+>>>>>>> 9df9ef407b4e60ded6439b0b88e6fe61141b08d4
 					answerArray[j] = guess;
 					remainingLetters --;
 				}
@@ -55,7 +73,11 @@
 		}
 	}
 		alert(answerArray.join(''))
+<<<<<<< HEAD
 		alert('Good job! You did it! The answer was ' + hangManWord + ' !')
+=======
+		alert('Good job! You did it! The answer was ' + word + ' !')
+>>>>>>> 9df9ef407b4e60ded6439b0b88e6fe61141b08d4
 		</script>
 	</body>
 	</html>
